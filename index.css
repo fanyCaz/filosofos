@@ -1,0 +1,48 @@
+body{
+	margin: 0;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 1;
+	height: 100%;
+}
+
+.sidebar{
+	background-color: #b275a4;
+	position: static;
+	height: 100%;
+	grid-column-start: 1;
+	color: #fff;
+	font-family: "Open Sans",sans-serif;
+}
+
+figure{
+	height: 100%;
+}
+
+.nav{
+	position: relative;
+	margin: 0 15%;
+	text-align: right;
+	font-weight: bold;
+}
+
+.dates{
+	list-style: none;
+	margin: 10%;
+}
+
+.date{
+	cursor: pointer;
+	text-align: center;
+}
+
+.main{
+	background-color: #e5d1e0;
+}
+
+.information{
+  background-color: #fff;
+}
