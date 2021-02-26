@@ -1,14 +1,20 @@
 "use strict";
 
-let printInformation=(name,years,info,image,school="")=>{
+let printInformation=(name,years,info,image,school="",cita="")=>{
 	document.querySelector('#name').innerText = name;
 	document.querySelector('#years').innerText = years;
 	document.querySelector('#info').innerText = info;
 	document.querySelector('#image').src = "images/"+image;
 	document.querySelector('#school').innerText = school;
+	if (cita != ""){
+		document.querySelector('#cita').innerText = cita;
+		document.querySelector('#cita').classList.remove('hidden');
+	}else{
+		document.querySelector('#cita').classList.add('hidden');
+	}
 }
 
-document.getElementById('uno').addEventListener('click', function(e){
+document.getElementById('aristoteles').addEventListener('click', function(e){
 	let name = "Aristóteles";
 	let years = "384 a.C";
 	let info = "A la edad de 18 años (366 a.C.) ingresó a la escuela del filsósofo Platón: La Academia. \n"+
@@ -23,7 +29,7 @@ document.getElementById('uno').addEventListener('click', function(e){
 	printInformation(name, years, info, image,school);
 });
 
-document.getElementById('dos').addEventListener('click', function(e){
+document.getElementById('epicuro').addEventListener('click', function(e){
 	let name  = "Epicuro";
 	let years = "Isla de Samos, actual Grecia, h. 342 a.C.-Atenas, h. 270 a.C.";
 	let info  = "Epicuro fundó, como también hicieron Platón y Aristóteles, su propia escuela, El Jardín.\n"+
@@ -37,7 +43,7 @@ document.getElementById('dos').addEventListener('click', function(e){
 	printInformation(name,years,info,image,school);
 });
 
-document.getElementById('tres').addEventListener('click', function(e){
+document.getElementById('kant').addEventListener('click', function(e){
 	let name = "Immanuel Kant";
 	let years = "22 de abril de 1724-12 de febrero de 1804";
 	let info = "En el año de 1785 Kant creó la obra llamada: “Fundamentación de la metafísica de las costumbres” " +
@@ -50,7 +56,7 @@ document.getElementById('tres').addEventListener('click', function(e){
 	printInformation(name,years,info,image,school);
 });
 
-document.getElementById('cuatro').addEventListener('click', function(e){
+document.getElementById('hume').addEventListener('click', function(e){
 	let name = "David Hume";
 	let years = "1711–1776";
 	let info = "Mantuvo la idea de que somos más llevados por nuestros sentimientos que por nuestra razón.” " +
@@ -66,4 +72,69 @@ document.getElementById('cuatro').addEventListener('click', function(e){
   let image = "hume.jpeg";
   let school = "No tuvo escuela, pero fue importante para la Ilustración";
   printInformation(name,years,info,image,school);
+});
+
+document.getElementById('tomas').addEventListener('click',function(){
+	let name  = "Tomás de Aquino";
+	let years = "1225 - 1274";
+	let info  = "Tomas de Aquino fue uno de los exponentes más grandes de la ética cristiana medieval " +
+	"influenciado por la filosofía aristotélica afirma que la felicidad es el bien y fin supremo del hombre " +
+	"obtenido a través de la contemplación  y el conocimiento de Dios.";
+	let image = "";
+	let school = "Escuela Religiosa: Ética Cristiana Medieval";
+	printInformation(name,years,info,image,school);
+});
+
+document.getElementById('nietzche').addEventListener('click',function(){
+	let name = "Friedrich Nietzsche";
+	let years = "";
+	let info = "El tema principal de la filosofía de nietzscheama es la vida . \n" +
+	" La vida entendida como lo que hay, el mundo y el hombre como lo que son, un conglomerado orgánico " +
+	"que tiende a preservar su existencia . Por lo tanto, la pregunta fundamental en su entorno a su pensamiento " +
+	"será siempre orientas a saber si ¿La existencia, en general, tiene algún sentido? " +
+	"Y si es asi, ¿cual es el sentido de las cosas de las cosas y que valor determina ese sentido?" +
+	"La vida es el valor supremo, sobre el cual afirma Nietzche, todo lo demás debía subordinarsele. \n" +
+	"A partir de ese momento, Nietszche empieza a llamarse a sí mismo inmoralista, en tanto que a toda ordenación " +
+	"ética del mundo que imponga valores morales (incluidos los valores de la religión cristiana) que denigre o se sobreponga " +
+	"a lo que él llama, el sentido de la tierra. ";
+	let cita = "Pero las costumbre son justamente la forma tradicional de actuar y de valorar. " +
+	"En asuntos donde no manda la tradición, no hay eticidad";
+	let image = "nietzsche.jpg";
+	let school = "";
+	printInformation(name,years,info,image,school,cita);
+});
+
+document.getElementById('locke').addEventListener('click',function(){
+	let name = "John Locke";
+	let years = "1632-1704";
+	let info = "Sus obras giran en torno a temas de políticas y teoría del conocimiento como: " +
+	"Ensayo sobre el entendimiento humano (Essay about human understanding); " +
+	"Carta sobre la tolerancia (A letter concerning toleration) y dos ensayos sobre el gobierno civil. " +
+	"Locke fue considerado el primer político liberal dentro del parlamento inglés, " +
+	"al afirmar que el estado natural del hombre es el de la igualdad. Realizó una importante contribución a " +
+	"la teoría del contrato social; Sus contribuciones al republicanismo clásico y la teoría liberal se reflejan " +
+	"en la Declaración de Independencia de los Estados Unidos y la Declaración de Derechos de 1689.";
+	let cita = "Considerado el padre de liberalismo clásico";
+	let image = "locke.png";
+	let school = "";
+	printInformation(name,years,info,image,school,cita);
+});
+
+document.getElementById('scheler').addEventListener('click',function(){
+	let name = "Max Scheler";
+	let years = "1874-1928";
+	let info = "Sus estudios se basaron en la facultad de medicina de la Universidad de Múnich, " +
+	"pero el año siguiente se trasladó a la Universidad de Berlín para estudiar filosofía y sociología. " +
+	"Scheler se propuso a sentar la base de una ética filosófica a partir de la cual se pudieran constituir " +
+	"una ética material de los valores. Su filosofía se basa en la fenomenología para estudiar los fenómenos " +
+	"emocionales y sus respectivas intencionalidades (los valores) y a partir de ellos elaboró una muy sólida y " +
+	"original fundamentación personalista de la ética: la realización de los valores se concretiza en modelos " +
+	"humanos que invitan a su seguimiento. Dichos modelos serían el héroe para los valores vitales, " +
+	"el genio para los valores espirituales y el santo para los valores religiosos. \n" +
+	"Un aporte fundamental de Scheler ha sido la descripción de la enorme riqueza e importancia ética que posee " +
+	"la vida emocional del hombre en la cual es primaria respecto de otra forma de saber.";
+	let cita = "";
+	let image = "scheler.jpeg";
+	let school = "";
+	printInformation(name,years,info,image,school,cita);
 });
