@@ -106,7 +106,12 @@ document.getElementById('tomas').addEventListener('click',function(){
 	let years = "1225 - 1274";
 	let info  = "Tomas de Aquino fue uno de los exponentes más grandes de la ética cristiana medieval " +
 	"influenciado por la filosofía aristotélica afirma que la felicidad es el bien y fin supremo del hombre " +
-	"obtenido a través de la contemplación  y el conocimiento de Dios.";
+	"obtenido a través de la contemplación  y el conocimiento de Dios.\n" + 
+	"En la escuela de Tomas de Aquino  encaminó la ética cristiana y la definió como un conjunto de verdades y " +
+	"dogmas revelados al hombre por un ser supremo, Dios cuya doctrina está encaminada a la redención de los pecados " +
+	"de los hombres después de la muerte. Esta doctrina tiene como centro una doctrina de la salvación cuyo fundamento " +
+	"reside en el acto de fe practicado por los hombres como respuesta por parte de los creyentes a la revelación sobrenatural " +
+	"que resalta el ejercicio del libre albedrío por el hombre.";
 	let image = "tomas.jpeg";
 	let school = "Escuela Religiosa: Ética Cristiana Medieval";
 	let cita = "";
@@ -201,4 +206,28 @@ document.getElementById('zenon').addEventListener('click', function(){
   let image = "zenon.jpeg";
   let school = "Fundador de la escuela filosófica estoica";
   printInformation(name,years,info,image,school,cita,ourtake);
+});
+
+document.getElementById('schopenhauer').addEventListener('click', function(){
+	let name = "Arthur Schopenhauer";
+	let years = "1788 - 1860";
+	let info = "Fue uno de los primeros filósofos de contender que el Universo no es un lugar racional.\n Fue conocido como el filósofo" +
+	" del pesimismo, porque criticaba los retos del valor de la existencia. Aunque se inspiraba en Kant, le atribuía al mundo una " +
+	" irracionalidad esencial. \nSu filosofía contrastaba con sus contemporarios como Hegel y Fichte, diciendo que sus escritos no tenían sentido.\n" +
+	" Uno de sus mayores argumentos es que el mundo fenomenológico es una representación, un objeto por el sujeto condicionado por su cognición," +
+	" y el principio de la 'sufficent reason', que dice que nada existe sin una razón.\n" +
+	" Otro de sus grandes aportes fue que toda acción tiene un motivo que es precedido por una necesidad.\n";
+	let ourtake = "Este filósofo es muy interesante no solo por criticar a los grandes pensadores de su época, " +
+	"sino por sus aportes al tema de la voluntad, ya que dice que es una fuerza presente en todos los objetos naturales, ciega, que" +
+	" actúa guiada por un motivo, acompañada por una conciencia de su propio movimiento.\n" +
+	" Al poner a la voluntad como una fuerza de la naturaleza, da lugar a que podamos buscar ser más concientes de nuestros actos," +
+	" así, el proyecto humano se puede enfocar en la búsqueda de estados de la mente más tranquilos y trascendentes, en lugar de " +
+	" ser esclavos de nuestros deseos naturales. \n" +
+	" Actualmente, en medio de una pandemia, donde se nos pide que por voluntad propia nos quedemos en casa, esta filosofía aplica " +
+	"poniendo en el foco a nuestra capacidad o no de controlar nuestros movimientos, y si somos capaces de colectivamente hacer actos morales" +
+	" trascendentes como cuidar del prójimo.";
+	let cita = "La compasión es la base de la moralidad";
+	let image = "arthur.jpeg";
+	let school = "";
+	printInformation(name,years,info,image,school,cita,ourtake);
 });
